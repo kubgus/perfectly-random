@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Perfectly Random</title>
+
+        <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
+        <link rel="stylesheet" href="styles/style.css">
+
+        <script src="scripts/random.js" defer></script>
+        <script src="scripts/canvas.js" defer></script>
+    </head>
+    <body>
+        <div class="content">
+            <div class="upper">
+                <h1 class="title">Perfectly Random</h1>
+                <p class="description">
+                    Move your mouse to add entropy to the result.
+                    Each dot represents an entropy data point.
+                    Scroll to change the length.
+                    Click to copy the result to your clipboard.
+                    (Note: I am not a cryptographer,
+                    don't use this for critical tasks)
+                </p>
+            </div>
+
+            <div class="lower hidden">
+                <div class="tooltips">
+                    <span id="byte-length"></span>
+                    <span id="mouse-entropy"></span>
+                </div>
+                <span id="result"></span>
+            </div>
+        </div>
+
+        <canvas id="canvas"></canvas>
+    </body>
+</html>
